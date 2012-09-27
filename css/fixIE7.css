@@ -44,10 +44,6 @@ input[type="submit"] {
     zoom: 1;
 }
 
-.exemple {
-    behavior: url(../htc/PIE.htc);
-}
-
 /*http://blog.neatlysliced.com/2008/03/hr-image-replacement/*/
 .text-editor hr {
     display: list-item;

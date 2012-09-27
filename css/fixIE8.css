@@ -1,11 +1,4 @@
 @charset "utf-8";
-.exemple {
-    behavior: url(../htc/PIE.htc);
-}
-
-.exemple {
-    position: relative;
-}
 
 /*http://blog.neatlysliced.com/2008/03/hr-image-replacement/*/
 .text-editor hr {
