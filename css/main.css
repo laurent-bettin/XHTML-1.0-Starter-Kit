@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* =============================================================================
+
+    @note    compresseur de code css : http://www.cleancss.com/
+
+    collection de polices : http://www.alsacreations.com/article/lire/631-quelles-polices-pour-un-site-web.html
+
+    Polices à empattements (serif)
+        font-family: Times, "Times New Roman", "Liberation Serif", FreeSerif, serif;
+        font-family: Georgia, "DejaVu Serif", Norasi, serif;
+
+    Polices sans empattements (sans-serif)
+        font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", sans-serif;
+        font-family: Tahoma, Geneva, Kalimati, sans-serif;
+        font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+        font-family: Impact, "Arial Black", sans-serif;
+
+    Polices à chasse fixe (monospace)
+        font-family: Courier, "Courier New", FreeMono, "Liberation Mono", monospace;
+        font-family: Monaco, "DejaVu Sans Mono", "Lucida Console", "Andale Mono", monospace;
+
+    Conventions de nommage des éléments génériques.
+        #header {} bloc d'entête
+        #footer {} bloc de pied de page
+        #main-nav {} navigation principale
+        #aside-nav {} navigation latérale
+        #secondary-nav {} navigation supplémentaire
+        #breadcrumb {} fil d'ariane
+        #sidebar {} partie latérale
+        #contact {} formulaire de contact
+        .error {} signalement des erreurs
+        .succes {} signalement d'une opération réussie
+        .warnig {} bloc pour attirer l'attention
+        .info {} élément ou bloc d'information
+        .more {} lien générique type "en savoir plus"
+        .block {} block générique
+
+    Si besoin suffixer les classes .block-a, .more-a etc
+
+    Quelques classes génériques si besoin
+        .clear-left { clear:left }
+        .clear-right { clear:right }
+        .clear-both { clear:both }
+        .valign-middle { vertical-align:middle }
+        .valign-top { vertical-align:top }
+        .valign-bottom { vertical-align:bottom }
+        .invisible { visibility:hidden }
+        .suffix1 { margin-right:XXpx }
+        .prefix1 { margin-left:XXpx }
+        .prepend-top { margin-top:XXem }
+        .append-bottom { margin-bottom:XXem }
+
+========================================================================== */
+body {
+    background:#fff;
+    color:#000;
+}
+
+/* =============================================================================
+    http://www.alsacreations.com/astuce/lire/43-comment-dfinir-lapparence-de-ses-liens.html
+    ========================================================================== */
+a:visited {
+    color:gray;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color:#da0019;
+}
+
+input,
+textarea {
+    font-family: inherit;
+}
+
+/* =============================================================================
+    Micro clear fix http://nicolasgallagher.com/micro-clearfix-hack/
+    ========================================================================== */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+.float-left {
+    float:left;
+}
+
+.float-right {
+    float:right;
+}
+
+.grid-a {
+    float:left;
+}
+
+.grid-a {
+    width:200px;
+}
+
+.wrapper {
+    overflow:hidden;
+}
+
+/*
+* Image replacement
+* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+*/
+.ir {
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+/* =============================================================================
+   Structure
+   ========================================================================== */
+/*
+ * Comment
+ */
+#global {}
+#container {
+    margin:0 auto;
+}
