@@ -53,14 +53,17 @@
         .append-bottom { margin-bottom:XXem }
 
 ========================================================================== */
+/* =============================================================================
+    Styles par défaut
+    ========================================================================== */
 body {
     background:#fff;
     color:#000;
 }
 
-/* =============================================================================
-    http://www.alsacreations.com/astuce/lire/43-comment-dfinir-lapparence-de-ses-liens.html
-    ========================================================================== */
+/*
+ *  http://www.alsacreations.com/astuce/lire/43-comment-dfinir-lapparence-de-ses-liens.html
+ */
 a:visited {
     color:gray;
 }
@@ -77,8 +80,11 @@ textarea {
 }
 
 /* =============================================================================
-    Micro clear fix http://nicolasgallagher.com/micro-clearfix-hack/
+    Classes génériques
     ========================================================================== */
+/*
+ *  Micro clear fix http://nicolasgallagher.com/micro-clearfix-hack/
+ */
 .cf:before,
 .cf:after {
     content:"";
@@ -89,12 +95,29 @@ textarea {
     clear:both;
 }
 
+/*
+ * Image replacement
+ * http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+ */
+.ir {
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
 .float-left {
     float:left;
 }
 
 .float-right {
     float:right;
+}
+
+/* =============================================================================
+   Structure
+   ========================================================================== */
+.wrapper {
+    overflow:hidden;
 }
 
 .grid-a {
@@ -105,27 +128,6 @@ textarea {
     width:200px;
 }
 
-.wrapper {
-    overflow:hidden;
-}
-
-/*
-* Image replacement
-* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
-*/
-.ir {
-    text-indent:100%;
-    white-space:nowrap;
-    overflow:hidden;
-}
-
-/* =============================================================================
-   Structure
-   ========================================================================== */
-/*
- * Comment
- */
-#global {}
 #container {
     margin:0 auto;
 }
