@@ -7,7 +7,7 @@
 
     var ui = {
         init : function () {
-            $('html').removeAttr('class');
+            $('body').removeAttr('class');
             if (!privateVar) {
                 privateVar = 0;
             }
