@@ -57,21 +57,21 @@
     Styles par défaut
     ========================================================================== */
 body {
-    background:#fff;
-    color:#000;
+    background: #fff;
+    color: #000;
 }
 
 /*
  *  http://www.alsacreations.com/astuce/lire/43-comment-dfinir-lapparence-de-ses-liens.html
  */
 a:visited {
-    color:gray;
+    color: gray;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color:#da0019;
+    color: #da0019;
 }
 
 input,
@@ -87,12 +87,12 @@ textarea {
  */
 .cf:before,
 .cf:after {
-    content:"";
-    display:table;
+    content: "";
+    display: table;
 }
 
 .cf:after {
-    clear:both;
+    clear: both;
 }
 
 /*
@@ -100,34 +100,34 @@ textarea {
  * http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
  */
 .ir {
-    text-indent:100%;
-    white-space:nowrap;
-    overflow:hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .float-left {
-    float:left;
+    float: left;
 }
 
 .float-right {
-    float:right;
+    float: right;
 }
 
 /* =============================================================================
    Structure
    ========================================================================== */
 .wrapper {
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .grid-a {
-    float:left;
+    float: left;
 }
 
 .grid-a {
-    width:200px;
+    width: 200px;
 }
 
 #container {
-    margin:0 auto;
+    margin: 0 auto;
 }
