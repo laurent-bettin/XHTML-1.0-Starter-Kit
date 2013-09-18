@@ -176,6 +176,15 @@ textarea {
 }
 
 /*
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+    line-height: normal;
+}
+
+/*
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
  * and `video` controls.
  * 2. Correct inability to style clickable `input` types in iOS.
