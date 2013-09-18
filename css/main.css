@@ -71,11 +71,6 @@ a:active {
     color: #da0019;
 }
 
-input,
-textarea {
-    font-family: inherit;
-}
-
 img {
     vertical-align: top;
 }
