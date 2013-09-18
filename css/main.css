@@ -85,10 +85,10 @@ img {
 
 
 /* =============================================================================
-   Inspiration http://www.alsacreations.com/astuce/lire/654-feuille-de-styles-de-base.html
+   From http://www.alsacreations.com/astuce/lire/654-feuille-de-styles-de-base.html
    ========================================================================== */
 /* =============================================================================
-   Titres
+   Title
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
     margin: 1em 0 .5em;
@@ -111,6 +111,21 @@ h3 {
 
 h4, h5, h6 {
     font-size: 1em;
+}
+
+.h1-like:first-child,
+.h2-like:first-child,
+.h3-like:first-child,
+.h4-like:first-child,
+.h5-like:first-child,
+.h6-like:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0 !important;
 }
 
 /* =============================================================================
@@ -141,17 +156,8 @@ dd {
     margin: .25em 0 .25em 32px;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
 /* =============================================================================
-   Paragraphes
+   Paragraphs
    ========================================================================== */
 p {
     margin: .75em 0;
@@ -163,11 +169,11 @@ li p {
 }
 
 /* =============================================================================
-   Divers
+   various
    ========================================================================== */
 address {
-  margin: .75em 0;
-  font-style: normal;
+    margin: .75em 0;
+    font-style: normal;
 }
 
 em {
@@ -178,23 +184,17 @@ blockquote {
     margin: 1em 20px;
 }
 
-.h1-like:first-child,
-.h2-like:first-child,
-.h3-like:first-child,
-.h4-like:first-child,
-.h5-like:first-child,
-.h6-like:first-child,
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child,
-h6:first-child {
-    margin-top: 0 !important;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 /* =============================================================================
-    Classes génériques
+    Helpers
     ========================================================================== */
 /*
  *  Micro clear fix http://nicolasgallagher.com/micro-clearfix-hack/
@@ -242,7 +242,7 @@ source https://github.com/stubbornella/oocss/blob/master/core/spacing/space.css
 }
 
 /* =============================================================================
-   Structure
+   Layout
    ========================================================================== */
 .wrapper {
     overflow: hidden;
