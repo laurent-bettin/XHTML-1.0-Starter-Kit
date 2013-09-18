@@ -87,8 +87,7 @@ img {
    Titles
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
-    margin: 1em 0 .5em;
-    line-height: 1.2;
+    margin: 1em 0 0;
     font-weight: 700;
     font-style: normal;
 }
@@ -109,6 +108,9 @@ h4, h5, h6 {
     font-size: 1em;
 }
 
+/* =============================================================================
+   Margins
+   ========================================================================== */
 .h1-like:first-child,
 .h2-like:first-child,
 .h3-like:first-child,
@@ -124,60 +126,50 @@ h6:first-child {
     margin-top: 0 !important;
 }
 
-/* =============================================================================
-   Lists
-   ========================================================================== */
 ul,
-ol {
-    margin: .75em 0;
-    padding: 0 0 0 17px;
-}
-
-nav ul,
-nav ol {
-    list-style: none;
-    list-style-image: none;
-}
-
-dl {
-    margin: .75em 0;
-}
-
-dt {
-  margin: .75em 0 0;
-  font-weight: 700;
+ol,
+dl,
+p,
+blockquote {
+    margin: .75em 0 0;
 }
 
 dd {
-    margin: .25em 0 .25em 32px;
+    margin: .25em 0 0;
+}
+
+/* avoid margins on nested elements */
+li p,
+li ul,
+li ol {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* =============================================================================
-   Paragraphs
+   form
    ========================================================================== */
-p {
-    margin: .75em 0;
+/*
+* Remove default fieldset styles.
+*/
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
-blockquote p,
-li p {
-    margin: .5em 0;
+/*
+* Allow only vertical resizing of textareas.
+*/
+textarea {
+    resize: vertical;
 }
 
 /* =============================================================================
    various
    ========================================================================== */
-address {
-    margin: .75em 0;
-    font-style: normal;
-}
-
 em {
     font-style: italic;
-}
-
-blockquote {
-    margin: 1em 20px;
 }
 
 hr {
