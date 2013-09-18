@@ -1,15 +1,15 @@
 @charset "utf-8";
 /* =============================================================================
 
-    @note    compresseur de code css : http://www.cleancss.com/
+    css minifier : http://www.cleancss.com/
 
     collection de polices : http://www.alsacreations.com/article/lire/631-quelles-polices-pour-un-site-web.html
 
-    Polices à empattements (serif)
+    Serif fonts
         font-family: Times, "Times New Roman", "Liberation Serif", FreeSerif, serif;
         font-family: Georgia, "DejaVu Serif", Norasi, serif;
 
-    Polices sans empattements (sans-serif)
+    Sans-serif fonts
         font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
         font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", sans-serif;
@@ -17,29 +17,28 @@
         font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
         font-family: Impact, "Arial Black", sans-serif;
 
-    Polices à chasse fixe (monospace)
+    Monospace Fonts
         font-family: Courier, "Courier New", FreeMono, "Liberation Mono", monospace;
         font-family: Monaco, "DejaVu Sans Mono", "Lucida Console", "Andale Mono", monospace;
 
-    Conventions de nommage des éléments génériques.
-        #header {} bloc d'entête
-        #footer {} bloc de pied de page
-        #main-nav {} navigation principale
-        #aside-nav {} navigation latérale
-        #secondary-nav {} navigation supplémentaire
-        #breadcrumb {} fil d'ariane
-        #sidebar {} partie latérale
-        #contact {} formulaire de contact
-        .error {} signalement des erreurs
-        .succes {} signalement d'une opération réussie
-        .warnig {} bloc pour attirer l'attention
-        .info {} élément ou bloc d'information
-        .more {} lien générique type "en savoir plus"
-        .block {} block générique
+    Few default class name
+        #header {}
+        #footer {}
+        #main-nav {}
+        #aside-nav {}
+        #secondary-nav {}
+        #breadcrumb {}
+        #sidebar {}
+        #contact {}
+        .aside {}
+        .error {}
+        .succes {}
+        .warnig {}
+        .info {}
+        .more {}
+        .block {}
 
-    Si besoin suffixer les classes .block-a, .more-a etc
-
-    Quelques classes génériques si besoin
+    Helpers if needed
         .clear-left { clear:left }
         .clear-right { clear:right }
         .clear-both { clear:both }
@@ -47,14 +46,12 @@
         .valign-top { vertical-align:top }
         .valign-bottom { vertical-align:bottom }
         .invisible { visibility:hidden }
-        .suffix1 { margin-right:XXpx }
-        .prefix1 { margin-left:XXpx }
-        .prepend-top { margin-top:XXem }
-        .append-bottom { margin-bottom:XXem }
+        .suffix-a { margin-right:XXpx }
+        .prefix-a { margin-left:XXpx }
 
 ========================================================================== */
 /* =============================================================================
-    Styles par défaut
+    Default styles
     ========================================================================== */
 body {
     background: #fff;
@@ -83,12 +80,11 @@ img {
     vertical-align: top;
 }
 
-
 /* =============================================================================
    From http://www.alsacreations.com/astuce/lire/654-feuille-de-styles-de-base.html
    ========================================================================== */
 /* =============================================================================
-   Title
+   Titles
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
     margin: 1em 0 .5em;
