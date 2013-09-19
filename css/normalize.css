@@ -69,6 +69,14 @@ abbr[title] {
 }
 
 /*
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+    font-weight: bold;
+}
+
+/*
  * Addresses styling not present in S5, Chrome
  */
 dfn {
@@ -131,9 +139,11 @@ sub {
    ========================================================================== */
 /*
  * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Remove the gap between images, videos, audio and canvas and the bottom of their containers
  */
 img {
-    border: 0; /*1*/
+    border: 0; /* 1 */
+    vertical-align: top; /* 2 */
 }
 
 /*
@@ -157,7 +167,7 @@ figure {
  * 1. Corrects color not being inherited in IE6/7/8/9
  */
 legend {
-    border: 0; /*1*/
+    border: 0; /* 1 */
     padding: 0;
 }
 
