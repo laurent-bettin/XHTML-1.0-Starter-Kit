@@ -3,14 +3,9 @@
 (function (context) {
     "use strict";
 
-    var privateVar;
-
     var ui = {
         init : function () {
-            $('body').removeAttr('class');
-            if (!privateVar) {
-                privateVar = 0;
-            }
+            $('body').removeClass('no-js');
         }
     };
 
