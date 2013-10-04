@@ -181,14 +181,17 @@ hr {
     clear: both;
 }
 
-/*
- * Image replacement
- * http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
- */
 .ir {
-    text-indent: 100%;
-    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
     overflow: hidden;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
 }
 
 .float-left {

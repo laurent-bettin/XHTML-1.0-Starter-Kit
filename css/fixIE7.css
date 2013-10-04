@@ -44,11 +44,15 @@ input[type="submit"] {
     zoom: 1;
 }
 
+.ir {
+    text-indent: -9999px;
+}
+
 /*http://blog.neatlysliced.com/2008/03/hr-image-replacement/*/
-.text-editor hr {
+/*.text-editor hr {
     display: list-item;
     list-style: url(path/to/image) inside;
     filter: alpha(opacity=0);
     margin-left: 0;
     width: 0;
-}
+}*/
