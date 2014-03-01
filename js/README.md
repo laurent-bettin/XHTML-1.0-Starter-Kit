@@ -4,7 +4,7 @@ Indentation with 4 spaces.
 
 No whitespace at the end of line or on blank lines.
 
-if/else/for/while/try always have braces and always go on multiple lines.
+**if**/**else**/**for**/**while**/**try** always have braces and always go on multiple lines.
 
 ```JavaScript
 if(condition) {
@@ -14,11 +14,11 @@ if(condition) {
 }
 ```
 
-Unary special-character operators (e.g., !, ++) must not have space next to their operand.
+Unary special-character operators (**!**, **++**) must not have space next to their operand.
 
-Any , and ; must not have preceding space.
+Any **,** and **;** must not have preceding space.
 
-Any ; used as a statement terminator must be at the end of the line.
+Any **;** used as a statement terminator must be at the end of the line.
 
 Any : after a property name in an object definition must not have preceding space.
 Short object can be write on a single line.
@@ -51,9 +51,9 @@ var secondVariable;
 var thirdVariable;
 ```
 
-The ? and : in a ternary conditional must have space on both sides.
+The **?** and **:** in a ternary conditional must have space on both sides.
 
-No filler spaces in empty constructs (e.g., {}, [], fn())
+No filler spaces in empty constructs (**{}**, **[]**, **fn()**)
 
 New line at the end of each file.
 
