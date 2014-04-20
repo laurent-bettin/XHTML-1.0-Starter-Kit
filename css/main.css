@@ -1,26 +1,6 @@
 @charset "utf-8";
 /* =============================================================================
 
-    css minifier : http://www.cleancss.com/
-
-    collection de polices : http://www.alsacreations.com/article/lire/631-quelles-polices-pour-un-site-web.html
-
-    Serif fonts
-        font-family: Times, "Times New Roman", "Liberation Serif", FreeSerif, serif;
-        font-family: Georgia, "DejaVu Serif", Norasi, serif;
-
-    Sans-serif fonts
-        font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
-        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-        font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", sans-serif;
-        font-family: Tahoma, Geneva, Kalimati, sans-serif;
-        font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
-        font-family: Impact, "Arial Black", sans-serif;
-
-    Monospace Fonts
-        font-family: Courier, "Courier New", FreeMono, "Liberation Mono", monospace;
-        font-family: Monaco, "DejaVu Sans Mono", "Lucida Console", "Andale Mono", monospace;
-
     Few default class name
         #header {}
         #footer {}
@@ -53,9 +33,14 @@
 /* =============================================================================
     Default styles
     ========================================================================== */
+html {
+    font-size: 62.5%;
+}
+
 body {
     background: #fff;
     color: #000;
+    font: 1.4em/1.5 Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -71,47 +56,67 @@ a:active {
     color: #da0019;
 }
 
-/* =============================================================================
-   From http://www.alsacreations.com/astuce/lire/654-feuille-de-styles-de-base.html
-   ========================================================================== */
+/*http://soqr.fr/vertical-rhythm/
 /* =============================================================================
    Titles
    ========================================================================== */
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 1em;
-    font-weight: 700;
-    font-style: normal;
-}
-
 h1 {
-    font-size: 1.75em;
+    font-size: 1.8571em; /* equiv 26px */
+    line-height: 1.6154em;
+    margin: 0 0 .8077em;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.7143em; /* equiv 24px */
+    line-height: 1.75em;
+    margin: 0 0 .875em;
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.5714em; /* equiv 22px */
+    line-height: 1.909em;
+    margin: 0 0 .9545em;
 }
 
-h4, h5, h6 {
-    font-size: 1em;
+h4 {
+    font-size: 1.4286em; /* equiv 20px */
+    line-height: 1.05em;
+    margin: 0 0 1.05em;
+}
+
+h5 {
+    font-size: 1.2857em; /* equiv 18px */
+    line-height: 1.1667em;
+    margin: 0 0 1.1667em;
+}
+
+h6 {
+    font-size: 1.1429em; /* equiv 16px */
+    line-height: 1.3125em;
+    margin: 0 0 1.3125em;
 }
 
 /* =============================================================================
    Margins
    ========================================================================== */
+p,
 ul,
 ol,
 dl,
-p,
-blockquote {
-    margin: 0 0 .75em;
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption {
+    font-size: 1em; /* equiv 14px */
+    line-height: 1.5em;
+    margin: 0 0 1.5em;
 }
 
-dd {
-    margin: 0 0 .25em;
+table {
+    margin-bottom: 1.5em;
 }
 
 /* avoid margins on nested elements */
@@ -123,6 +128,39 @@ li ol {
 }
 
 /* =============================================================================
+   Font size variations
+   ========================================================================== */
+.smaller {
+    font-size: .7143em; /* equiv 10px */
+    line-height: 2.1em;
+    margin: 2.1em 0;
+}
+
+.small {
+    font-size: .8571em; /* equiv 12px */
+    line-height: 1.75em;
+    margin: 1.75em 0;
+}
+
+.big {
+    font-size: 1.1429em; /* equiv 16px */
+    line-height: 1.3125em;
+    margin: 1.3125em 0;
+}
+
+.bigger {
+    font-size: 1.2857em; /* equiv 18px */
+    line-height: 1.1667em;
+    margin: 1.1667em 0;
+}
+
+.biggest {
+    font-size: 1.4286em; /* equiv 20px */
+    line-height: 1.05em;
+    margin: 1.05em 0;
+}
+
+/* =============================================================================
    form
    ========================================================================== */
 /*
@@ -130,6 +168,14 @@ li ol {
 */
 textarea {
     resize: vertical;
+}
+
+/* =============================================================================
+   images
+   ========================================================================== */
+img {
+    height: auto;
+    max-width: 100%;
 }
 
 /* =============================================================================
@@ -251,10 +297,6 @@ source https://github.com/stubbornella/oocss/blob/master/core/spacing/space.css
     tr,
     img {
         page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
     }
 
     @page {
